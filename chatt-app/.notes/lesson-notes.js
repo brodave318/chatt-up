@@ -38,4 +38,13 @@
  * Broadcast send messages to everyone but user:
  * > Send message when a user joins
  * > Send message when a user leaves
+ * ******************************
+ *  #158
+ * ******************************
+ * Setup to share user's location using browser geolocation API
+ * Create button to share location on HTML
+ * Add click event on chat.js
+ * > Get current location
+ * Have client emit "sendLocation" with an object containing latitude & longitude
+ * Have server listen for "sendLocation" and send Google Maps link with coordinates
  */
