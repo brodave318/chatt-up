@@ -1,6 +1,6 @@
 /**
  * ******************************
- *  #152
+ *  #152 -- src/index.js
  * ******************************
  * Basic Setup:
  * Initialize npm
@@ -14,7 +14,7 @@
  * > Create "start" script using node
  * > Create "dev" script using nodemon
  * ******************************
- *  #154
+ *  #154 -- public/index.html, public/js/chat.js, src/index.js
  * ******************************
  * Setup Websocket Support for Server:
  * > Install socket.io
@@ -25,7 +25,7 @@
  * > Create js/char.js file in public folder & link to it
  * > Connect to server
  * ******************************
- *  #156
+ *  #156 -- public/index.html, public/js/chat.js, src/index.js
  * ******************************
  * Send message to newly connected
  * Allow client to send messages to each other:
@@ -33,13 +33,13 @@
  * > Setuo event listeners for form submissions
  * > Have server listen for "sendMessage"
  * ******************************
- *  #157
+ *  #157 -- src/index.js,
  * ******************************
  * Broadcast send messages to everyone but user:
  * > Send message when a user joins
  * > Send message when a user leaves
  * ******************************
- *  #158
+ *  #158 -- public/index.html, public/js/chat.js, src/index.js
  * ******************************
  * Setup to share user's location using browser geolocation API
  * Create button to share location on HTML
@@ -47,4 +47,12 @@
  * > Get current location
  * Have client emit "sendLocation" with an object containing latitude & longitude
  * Have server listen for "sendLocation" and send Google Maps link with coordinates
+ * ******************************
+ *  #159 -- public/js/chat.js, src/index.js
+ * ******************************
+ * Setup acknowledgements
+ * Restrict profanity
+ * > npm install bad-words
+ * > Require it
+ * > Initialize it
  */
