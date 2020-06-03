@@ -55,4 +55,8 @@
  * > npm install bad-words
  * > Require it
  * > Initialize it
+ * ******************************
+ *  #160 -- public/js/chat.js, src/index.js
+ * ******************************
+ * Improve button interaction
  */
