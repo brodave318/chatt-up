@@ -25,10 +25,14 @@ app.use(express.static(publicDirectoryPath))
 io.on('connection', (socket) => {
   console.log('Socket.io connected')
 
-  // #156 a
-  socket.emit('message', generateMessage('Welcome!'))
-  // #157 a.a
-  socket.broadcast.emit('message', generateMessage('A new user has joined!'))
+  socket.on('join', ({ username, room }) => {
+    socket.join(room)
+
+    // #156 a
+    socket.emit('message', generateMessage('Welcome!'))
+    // #157 a.a
+    socket.broadcast.to(room).emit('message', generateMessage(`${username} has joined!`))
+  })
 
   // #156 b.c #159
   socket.on('sendMessage', (message, callback) => {
