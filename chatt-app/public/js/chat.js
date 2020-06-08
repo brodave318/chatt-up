@@ -10,7 +10,7 @@ const $messages = document.querySelector('#messages')
 
 // Templates
 const messageTemplate = document.querySelector('#message-template').innerHTML
-const locationMessageTemplate = document.querySelector('#location-template').innerHTML
+const locationMessageTemplate = document.querySelector('#location-message-template').innerHTML
 
 // #156 a
 socket.on('message', message => {
